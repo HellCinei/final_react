@@ -1,6 +1,8 @@
 import React from "react";
 import * as styles from "./Login.module.css";
 import { useForm } from "react-hook-form";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Login() {
   const {
@@ -12,6 +14,9 @@ export default function Login() {
   const addLogin = (data) => console.log(data);
   return (
     <div>
+      <header>
+        <Header/>
+      </header>
       <main>
         <div className={styles.cardLogin}>
           <h1>Faça seu Login</h1>
@@ -49,6 +54,9 @@ export default function Login() {
           </div>
         </div>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }
