@@ -9,7 +9,6 @@ export default function Catalogo() {
   const [filmes, setFilmes] = useState([]);
   const [filmeDetalhado, setFilmeDetalhado] = useState(null);
 
-  // Carregar a lista de filmes
   useEffect(() => {
     axios
       .get("http://localhost:8080/filmes")
@@ -17,7 +16,6 @@ export default function Catalogo() {
       .catch(() => console.log("Problemas na requisição"));
   }, []);
 
-  // Carregar detalhes de um filme pelo ID (quando o ID é fornecido)
   useEffect(() => {
     if (id) {
       axios
@@ -31,18 +29,15 @@ export default function Catalogo() {
     <div>
       <Header />
       <main>
-        {/* Renderização condicional: exibe apenas os detalhes do filme selecionado se houver um `id` */}
         {filmeDetalhado ? (
           <div className={styles.modal}>
             <h2>{filmeDetalhado.titulo}</h2>
             <p>{filmeDetalhado.sinopse}</p>
-            {/* Botão para voltar à lista completa */}
             <button onClick={() => setFilmeDetalhado(null)} className={styles.btnVoltar}>
               Voltar
             </button>
           </div>
         ) : (
-          // Exibe a lista de filmes se nenhum filme detalhado estiver selecionado
           <div className={styles.cards}>
             {filmes.map((filme) => (
               <div className={styles.card} key={filme.id}>

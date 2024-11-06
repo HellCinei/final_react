@@ -13,11 +13,11 @@ export default function HeaderHome() {
               Home
               </Link>
             </li>
-            {/* <li className={styles.item}>
+            <li className={styles.item}>
               <Link className={styles.link} to={"/catalogo"}>
               Catálogo
               </Link>
-            </li> */}
+            </li>
             <li className={styles.item}>
             <Link className={styles.link} to={"/compras"}>
               Compre
