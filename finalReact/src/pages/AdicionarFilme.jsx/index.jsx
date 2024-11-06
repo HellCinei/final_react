@@ -10,6 +10,7 @@ import * as styles from "./AdicionarFilme.module.css";
 const validationPost = yup.object().shape({
   titulo: yup.string().required("Título é obrigatório"),
   sinopse: yup.string().required("Sinopse é obrigatória"),
+  
 });
 
 const AdicionarFilme = () => {
@@ -41,13 +42,13 @@ const AdicionarFilme = () => {
           <div className={styles.linePost} />
           <div className={styles.cardBodyPost}>
             <form onSubmit={handleSubmit(addPost)}>
-              <div className={styles.fields}>
+            <div className={styles.fields}>
                 <label htmlFor="titulo">Título</label>
                 <input
                   type="text"
                   name="titulo"
                   id="titulo"
-                  placeholder="Título"
+                  placeholder="Titulo"
                   {...register("titulo")}
                 />
                 <p className={styles.errorMessage}>{errors.titulo?.message}</p>
@@ -63,6 +64,7 @@ const AdicionarFilme = () => {
                 />
                 <p className={styles.errorMessage}>{errors.sinopse?.message}</p>
               </div>
+              
               <div className={styles.btnPost}>
                 <button type="submit">Adicionar Filme</button>
               </div>
