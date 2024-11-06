@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import * as styles from './Compras.module.css';
-import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import * as styles from './Compras.module.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Compras() {
+	let Navigate = useNavigate();
 	const [contagem, setContagem] = useState(0);
 	const [valor, setValor] = useState(0);
 	const [filme, setFilme] = useState(10.5);
@@ -14,6 +16,10 @@ export default function Compras() {
 		} else {
 			setContagem(contagem - 1);
 		}
+	}
+
+	const pagamento = () => {
+		Navigate("/pagamento")
 	}
 
 	useEffect(() => {
@@ -111,7 +117,7 @@ export default function Compras() {
 					<p className={styles.texto}>
 						Foram selecionados <span className={styles.valor}>{contagem}</span> assentos para um total de R$ <span className={styles.valor}>{valor}</span>
 					</p>
-					<button className={styles.botao} onClick={() => { }}>Finalizar</button>
+					<button onClick={pagamento} className={styles.botao}>Finalizar</button>
 				</div>
 			</main>
 			<footer>

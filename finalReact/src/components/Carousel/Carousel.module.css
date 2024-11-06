@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 45px auto;
+	margin: 0 auto;
 }
 .carousel {
 	position: relative;
@@ -30,17 +30,16 @@
 }
 .carousel__btnPrev {
 	left: 0;
-	/* margin-left: 0%; */
 }
 .carousel__btnNext {
 	right: 0;
-	/* margin-right: 0%; */
 }
 .carousel__img {
 	align-items: center;
 	width: 600px;
-	/* margin-left: 25%; */
 	height: auto;
 	display: block;
 	transition: transform 0.3s ease-in-out;
+	border-radius: 20px;
+	border: 2px solid black;
 }

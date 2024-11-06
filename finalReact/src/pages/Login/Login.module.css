@@ -4,7 +4,7 @@ main {
 	padding: 3rem 0;
 }
 .cardLogin {
-	background-color: darkred;
+	background-color: rgb(100, 0, 0);
 	padding: 30px 70px;
 	border-radius: 15px;
 }

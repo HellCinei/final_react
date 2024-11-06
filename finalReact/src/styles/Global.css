@@ -11,10 +11,10 @@
 	padding: 0;
 	background-image: linear-gradient(
 		to right,
-		darkgray,
-		white,
-		white,
-		darkgray
+		gray,
+		lightgray,
+		lightgray,
+		gray
 	);
 }
 

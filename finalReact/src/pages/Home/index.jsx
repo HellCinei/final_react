@@ -10,9 +10,11 @@ export default function Home() {
 
   const images = [
 
-    '../../src/robo.jpg',
-    '../../src/sorria.jpg',
-    '../../src/venom.jpg',
+    '../../src/assets/filme.jpg',
+    '../../src/assets/robo.jpg',
+    '../../src/assets/sorria.jpg',
+    '../../src/assets/venom.jpg',
+    '../../src/assets/terrifier.jpg',
   ];
 
 
