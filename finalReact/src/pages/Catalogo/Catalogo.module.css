@@ -1,20 +1,19 @@
-main header {
-    display: flex;
-  }
-  .cards .card h2 {
+
+  
+  
+    .cards .card h2 {
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
   }
-  img {
-    width: 20px;
-    margin-left: 40px;
-    cursor: pointer;
-  }
-  .modal {
-    width: 80px;
-    height: 100px;
-    background-color: white;
+  
+  main .cards .card {
+    margin: 0 auto;
+    background-color: #2f3644;
+    padding: 30px 40px;
+    width: 600px;
+    border-radius: 7px;
+    margin-top: 40px;
   }
   main .cards {
     display: flex;
@@ -41,19 +40,31 @@ main header {
     color: #d2daf5;
     font-size: 1.7rem;
   }
+  img {
+    width: 20px;
+     margin-left: 0px; /*aqui era o problema da img home */
+    cursor: pointer;
+  } 
+
+  .modal {
+    width: 80px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+  }
   .line {
     background-color: #3e445b;
     height: 2px;
   }
-  p {
-    margin-top: 20px;
-    font-size: 1.2rem;
+   /* p { */
+    /* margin-top: 20px; */
+    /* font-size: 1.2rem; */
   
-    max-width: 500px;
-    font-family: Noto Sans;
-    font-weight: 500;
-    color: #b3bacf;
-  }
+    /* max-width: 500px; */
+    /* font-family: Noto Sans; */
+    /* font-weight: 500; */
+    /* color: #b3bacf; */
+  /* }  */
+
   .btns {
     display: flex;
     justify-content: space-between;
@@ -79,6 +90,7 @@ main header {
   .btnDelete button {
     background-color: rgb(241, 45, 45);
   }
+
   .loading {
     height: 100vh;
     display: flex;
@@ -107,4 +119,3 @@ main header {
     padding: 10px 20px;
     margin-top: 20px;
   }
-  
