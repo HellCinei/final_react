@@ -29,8 +29,8 @@
 	color: #131313;
 }
 .price {
-	font-size: 1.75rem;
-	color: rgb(200, 0, 0); /* Altere a cor conforme sua preferência */
+	font-size: 2rem;
+	color: rgb(200, 1, 1.7);
 	font-weight: bold;
 	text-shadow: 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -38,4 +38,5 @@
 	margin-top: 15px;
 	font-weight: bold;
 	font-size: 1.2rem;
+	font-family: Arial, Helvetica, sans-serif;
 }

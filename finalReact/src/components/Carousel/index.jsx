@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const Carousel = ({ images }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    if (!images || images.length === 0) return <p></p>;
+
 
     const nextSlide = () => {
         setActiveIndex((prevIndex) =>
