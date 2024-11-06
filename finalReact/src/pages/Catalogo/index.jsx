@@ -31,25 +31,27 @@ export default function Catalogo() {
       <main>
         {filmeDetalhado ? (
           <div className={styles.modal}>
-            <h2>{filmeDetalhado.titulo}</h2>
-            <p>{filmeDetalhado.sinopse}</p>
+            <h2 className={styles.titulo}>{filmeDetalhado.titulo}</h2>
+            <p className={styles.sinopse}>{filmeDetalhado.sinopse}</p>
+            <Link to={`/catalogo`}>
             <button onClick={() => setFilmeDetalhado(null)} className={styles.btnVoltar}>
               Voltar
             </button>
+            </Link>
           </div>
         ) : (
           <div className={styles.cards}>
             {filmes.map((filme) => (
               <div className={styles.card} key={filme.id}>
                 <header className={styles.header}>
-                  <h2>{filme.titulo}</h2>
+                  <h2 className={styles.titulo}>{filme.titulo}</h2>
                 </header>
                 <div className={styles.line} />
-                <p>{filme.sinopse}</p>
+                <p  className={styles.sinopse}>{filme.sinopse}</p>
                 <div className={styles.btns}>
                   <div className={styles.btnLerFilmes}>
                     <Link to={`/catalogo/${filme.id}`}>
-                      <button>Leia mais</button>
+                      <button className={styles.btnL}>Leia mais</button>
                     </Link>
                   </div>
                 </div>
