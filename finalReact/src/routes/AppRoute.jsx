@@ -1,17 +1,16 @@
 import React from 'react'
 import {Routes, Route} from 'react-router-dom'
-import Filme from '../pages/Filme'
-import Posts from '../pages/Posts'
-import Update from '../pages/Update'
-import More from '../pages/Catalogo'
+// import More from '../pages/Catalogo'
+import Home from '../pages/Home'
+import Login from '../pages/Login'
+import Sobre from '../components/Sobre'
 
 export default function AppRoute() {
   return (
     <Routes >
-        <Route path='/' element={<Feed/>} > </Route>
-        <Route path='/posts' element={<Posts/>} > </Route>
-        <Route path='/update/:id' element={<Update/>} > </Route>
-        <Route path='/more/:id' element={<More/>} > </Route>
+        <Route path='/' element={<Home/>} > </Route>
+        <Route path='/login' element={<Login/>} > </Route>
+        <Route path='/sobre' element={<Sobre/>} > </Route>
         <Route path='*' element={<Error/>} > </Route>
     </Routes>
   )

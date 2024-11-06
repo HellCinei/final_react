@@ -12,9 +12,7 @@ export default function App() {
      <BrowserRouter>
       <AppRoute/>
     </BrowserRouter>
-      <Sobre/>
-      <Compras/>
-      <Login />
+      
 
     </div>
   )

@@ -1,7 +1,7 @@
 import React from "react";
-import * as styles from "./HeaderFeed.module.css";
+import * as styles from "./HeaderHome.module.css";
 import { Link } from "react-router-dom";
-export default function HeaderFeed() {
+export default function HeaderHome() {
   return (
     <div>
       <header className={styles.headerPrincipal}>

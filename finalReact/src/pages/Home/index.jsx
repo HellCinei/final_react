@@ -1,9 +1,8 @@
 import React from 'react'
 import * as styles from './Home.module.css';
 import Carousel from '../../components/Carousel';
-import Header from '../../components/Header';
 import Combos from '../../components/Combos';
-
+import HeaderHome from "../../components/HeaderHome";
 
 export default function Home() {
 
@@ -17,7 +16,7 @@ export default function Home() {
 
   return (
     <div className={styles.home}>
-       
+        <HeaderHome/>
         <h1>Bem vindos ao CineTOP</h1>
         <p>Assista aos melhores filmes e aproveite nossos combos de pipoca</p>
         
