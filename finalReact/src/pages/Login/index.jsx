@@ -3,14 +3,20 @@ import * as styles from "./Login.module.css";
 import { useForm } from "react-hook-form";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const {
     register,
     handleSubmit
-    // formState: {},
   } = useForm();
 
+    let Navigate = useNavigate();
+    const logar = () => {
+     alert('Login efetuado com sucesso!')
+    Navigate("/")
+    }
+  
   const addLogin = (data) => console.log(data);
   return (
     <div>
@@ -24,12 +30,12 @@ export default function Login() {
           <div className={styles.cardBodyLogin}>
             <form onSubmit={handleSubmit(addLogin)}>
               <div className={styles.fields}>
-                <label htmlFor="nome">Nome</label>
+                <label htmlFor="email">Email</label>
                 <input
                   type="text"
-                  name="nome"
-                  id="nome"
-                  {...register("nome")}
+                  name="email"
+                  id="email"
+                  {...register("email")}
                 />
               </div>
 
@@ -44,8 +50,8 @@ export default function Login() {
               </div>
 
               <div className={styles.btnLogar}>
-                <button type="submit">Logar</button>
-                
+                <button onClick={logar}>Logar</button>
+     
                 <p>Entrar com o Google ou Facebook</p>
                 <p>Esqueceu a senha?</p>
                
