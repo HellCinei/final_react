@@ -9,17 +9,10 @@
 	font-weight: 400;
 	margin: 0 auto;
 	padding: 0;
-	background-image: linear-gradient(
-		to right,
-		gray,
-		lightgray,
-		lightgray,
-		gray
-	);
 }
 
 button {
-height: 40px;
+height: auto;
 width: 120px;
 color: white;
 font-size: 1.1rem;
