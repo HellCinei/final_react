@@ -8,7 +8,6 @@ import Header from "../../components/Header";
 import Footer from '../../components/Footer';
 import * as styles from "./AdicionarFilme.module.css";
 
-// Definindo a validação para o formulário
 const validationPost = yup.object().shape({
   titulo: yup.string().required("Título é obrigatório"),
   sinopse: yup.string().required("Sinopse é obrigatória"),
@@ -17,20 +16,17 @@ const validationPost = yup.object().shape({
 const AdicionarFilme = () => {
   const navigate = useNavigate();
 
-  // Função para adicionar filme
   const addPost = (data) => {
-    // Verificando os dados que serão enviados
-    console.log(data); // Verifique se os dados estão corretos no console
+    console.log(data); 
     axios
       .post("http://localhost:8080/filmes", data)
       .then(() => {
         console.log("Filme adicionado com sucesso");
-        navigate("/config"); // Após adicionar, redireciona para o catálogo
+        navigate("/config"); 
       })
       .catch(() => console.log("Erro ao adicionar o filme"));
   };
 
-  // Configuração do hook de formulário
   const {
     register,
     handleSubmit,
