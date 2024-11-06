@@ -1,0 +1,177 @@
+
+/* Config.module.css*/
+
+
+.background {
+  background-image: url("../../assets/pipoca2.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 100%;
+ 
+}
+
+
+.modal {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin: auto;
+}
+
+/* Estilo dos campos */
+.fields {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #6c63ff;
+  box-shadow: 0 0 6px rgba(108, 99, 255, 0.25);
+}
+
+.errorMessage {
+  color: #d9534f;
+  font-size: 13px;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* Estilo dos Botões */
+.btnEditar,
+.btnVoltar,
+.btnPostar {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+}
+
+.btnEditar,
+.btnVoltar {
+  background-color: #555;
+  margin-right: 10px;
+}
+
+.btnEditar:hover,
+.btnVoltar:hover {
+  background-color: #333;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.btnPostar {
+  background-color: #333;
+  margin: 10px 0;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.btnPostar:hover {
+  background-color: #5a5a5a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 24px 40px;
+}
+
+.card {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 260px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.header h2 {
+  font-size: 22px;
+  color: #333;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.line {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 16px 0;
+}
+
+/* Botões de Ação dos Cards */
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btns button {
+  flex: 1;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-right: 8px;
+}
+
+.btns button:last-child {
+  background-color: black;
+  margin-right: 0;
+}
+
+.btns button:nth-child(1) {
+  background-color: black;
+}
+
+.btns button:nth-child(2) {
+  background-color: black;
+}
+
+.btns button:hover {
+  opacity: 0.85;
+}
