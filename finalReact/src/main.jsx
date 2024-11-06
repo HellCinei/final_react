@@ -9,9 +9,6 @@ import Carousel from './components/Carousel/index.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Header/>
-    <Home />
-    <Carousel/>
-    <Footer/>
+    <App/>
   </StrictMode>,
 )

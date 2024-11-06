@@ -17,8 +17,8 @@ export default function Combos() {
       {combos.map((combo) => (
         <a key={combo.id} className={styles.combo}>
           <img src={combo.imageUrl} alt={combo.name} />
-          <h3>{combo.name}</h3>
-          <span className={styles.price}>R${combo.price.toFixed(2)},00 </span>
+          <div>{combo.name}</div>
+          <span className={styles.price}>R${combo.price.toFixed(2)} </span>
         </a>
       ))}
 
@@ -36,12 +36,6 @@ export default function Combos() {
       <p>1 Balde de Pipoca Star Wars Jedi & 1 Balde de Pipoca Star Wars Primeira Ordem. Por APENAS:</p>
       <span className={styles.valor}>R$38,90</span>
       </div> */}
-
-
-
-
-
-
 {/* 
       </a> */}
 
