@@ -18,10 +18,6 @@ export default function Compras() {
 		}
 	}
 
-	const pagamento = () => {
-		Navigate("/pagamento")
-	}
-
 	useEffect(() => {
 		setValor(contagem * filme);
 	}, [{ contagem }])
@@ -117,7 +113,7 @@ export default function Compras() {
 					<p className={styles.texto}>
 						Foram selecionados <span className={styles.valor}>{contagem}</span> assentos para um total de R$ <span className={styles.valor}>{valor}</span>
 					</p>
-					<button onClick={pagamento} className={styles.botao}>Finalizar</button>
+					<button onClick={() => {Navigate("/pagamento")}} className={styles.botao}>Finalizar</button>
 				</div>
 			</main>
 			<footer>
