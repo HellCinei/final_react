@@ -1,10 +1,10 @@
 import React from 'react'
 import * as styles from './Home.module.css';
 import Carousel from '../../components/Carousel';
+
 import HeaderHome from '../../components/HeaderHome';
 import Footer from '../../components/Footer';
 import Combos from '../../components/Combos';
-
 
 export default function Home() {
 
@@ -19,6 +19,8 @@ export default function Home() {
 
 
   return (
+
+
     <div>
       <header>
         <HeaderHome/>
