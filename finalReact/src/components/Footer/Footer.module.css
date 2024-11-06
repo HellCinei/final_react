@@ -1,6 +1,6 @@
 footer {
-    background-color: darkred;
-    border-top: 1px solid red;
+    background-color: rgb(100, 0, 0);
+	box-shadow: 0 0 15px rgb(200, 0, 0);
     text-align: center;
     height: 50px;
     width: 100%;
@@ -11,6 +11,5 @@ footer {
 
 footer > p {
     font-size: 1em;
-    color: black;
-	text-shadow: 1px 1px firebrick;
+    color: white;
 }
