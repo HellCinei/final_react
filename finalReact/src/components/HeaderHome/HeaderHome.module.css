@@ -28,7 +28,7 @@ header {
 		border-bottom: 1px solid red;
 	;  
   }
-    .btnNewPost button{
+    .btnLerMais button{
       font-size: 1.2rem;
       font-family: Heebo;
       font-weight: 700;
@@ -44,7 +44,7 @@ header {
       cursor: pointer;
     }
     
-    .btnNewPost button:hover {
+    .btnLerMais button:hover {
       transition: 0.2s;
       background-color: #538af0;
     }

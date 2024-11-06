@@ -73,7 +73,7 @@ main header {
   .btnEdit button {
     background-color: #80d8ff;
   }
-  .btnReadMore button {
+  .btnLerFilmes button {
     background-color: #3decb1;
   }
   .btnDelete button {
@@ -85,3 +85,26 @@ main header {
     align-items: center;
     justify-content: center;
   }
+
+  .modal {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btnVoltar {
+    background-color: #80d8ff;
+    color: #333;
+    font-size: 1.3rem;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  

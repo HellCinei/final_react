@@ -5,7 +5,6 @@ import Carousel from '../../components/Carousel';
 import HeaderHome from '../../components/HeaderHome';
 import Footer from '../../components/Footer';
 import Combos from '../../components/Combos';
-import HeaderHome from "../../components/HeaderHome";
 
 export default function Home() {
 
