@@ -6,6 +6,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import Footer from "../../components/Footer";
 
 const validationSchema = yup.object().shape({
   titulo: yup
@@ -70,7 +71,7 @@ export default function Config() {
   return (
     <div>
       <Header />
-      <main>
+      <main className={styles.background}>
         {filmeDetalhado ? (
           <div className={styles.modal}>
             <h2>Editar Filme</h2>
@@ -132,6 +133,7 @@ export default function Config() {
           </div>
         )}
       </main>
+      <Footer/>
     </div>
   );
 }
