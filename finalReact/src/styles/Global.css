@@ -11,9 +11,9 @@
 	padding: 0;
 	background-image: linear-gradient(
 		to right,
-		lightgray,
+		darkgray,
 		white,
 		white,
-		lightgray
+		darkgray
 	);
 }
