@@ -5,6 +5,7 @@ import axios from "axios";
 import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header";
+import Footer from '../../components/Footer';
 import * as styles from "./AdicionarFilme.module.css";
 
 // Definindo a validação para o formulário
@@ -38,15 +39,17 @@ const AdicionarFilme = () => {
 
   return (
     <div>
+      <header>
       <Header />
-      <main>
+      </header>
+      <main className={styles.menu}>
         <div className={styles.cardPost}>
-          <h1>Criar Filme</h1>
+          <h1>Adicionar Filme</h1>
           <div className={styles.linePost} />
           <div className={styles.cardBodyPost}>
             <form onSubmit={handleSubmit(addPost)}>
               <div className={styles.fields}>
-                <label htmlFor="titulo">Título</label>
+                <label htmlFor="titulo" className={styles.titulo}>Título</label>
                 <input
                   type="text"
                   name="titulo"
@@ -57,7 +60,7 @@ const AdicionarFilme = () => {
                 <p className={styles.errorMessage}>{errors.titulo?.message}</p>
               </div>
               <div className={styles.fields}>
-                <label htmlFor="sinopse">Sinopse</label>
+                <label htmlFor="sinopse" className={styles.titulo}>Sinopse</label>
                 <input
                   type="text"
                   name="sinopse"
@@ -74,6 +77,9 @@ const AdicionarFilme = () => {
           </div>
         </div>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 };
