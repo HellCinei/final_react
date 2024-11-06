@@ -24,7 +24,7 @@ export default function Home() {
       <main className={styles.home}>
         <h1>Bem vindos ao CineTOP</h1>
         <p>Assista aos melhores filmes e aproveite nossos combos de pipoca</p>
-        <main>
+        <main className={styles.corpo}>
           <Carousel images={images} />
           <Combos />
         </main>

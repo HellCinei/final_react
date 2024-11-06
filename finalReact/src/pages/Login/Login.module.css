@@ -1,57 +1,47 @@
 main {
-    display: flex;
-    justify-content: center;
-        padding: 3rem 0;
- }
-   .cardLogin {
-    background-color: darkred;
-    padding: 30px 70px;
-    border-radius: 15px;
- }
-   .cardLogin h1{
-    font-family: Heebo;
-    font-weight: 400;
-      color: black;
-      font-size: 3rem;
-    
- }
-   .cardBodyLogin {
-    margin-top: 25px;
-   }
-   .fields {
-    margin-bottom: 20px;
- }
-   label {
-    font-size: 1.2rem;
-      color: black;
-      font-family: Poppins;
- }
-   input{
-    width: 100%;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    height: 45px;
- }
+	display: flex;
+	justify-content: center;
+	padding: 3rem 0;
+}
+.cardLogin {
+	background-color: darkred;
+	padding: 30px 70px;
+	border-radius: 15px;
+}
+.cardLogin h1 {
+	font-family: Heebo;
+	font-weight: 400;
+	color: black;
+	font-size: 3rem;
+}
+.cardBodyLogin {
+	margin-top: 25px;
+}
+.fields {
+	margin-bottom: 20px;
+}
+label {
+	font-size: 1.2rem;
+	color: black;
+	font-family: Poppins;
+}
+input {
+	width: 100%;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	height: 45px;
+}
 
-   .btnLogar{
-    margin-top: 30px;
-    text-align: center;
-   }
-   .btnLogar button{
-    font-family: Heebo;
-    font-size: 1.3rem;
-      padding: 5px 50px;
-    color: #fff;
-    background-color: black;
-      border: 0;
-    border-radius: 10px;
-   }
-   .errorMessage {
-    color: rgb(240, 47, 47);
- }
+.btnLogar {
+	margin-top: 30px;
+	text-align: center;
+}
 
-p{
-    font-size: 1.1rem; 
-    margin-top: 5px;
+.errorMessage {
+	color: rgb(240, 47, 47);
+}
 
+p {
+	font-size: 1.1rem;
+	margin-top: 5px;
 }
