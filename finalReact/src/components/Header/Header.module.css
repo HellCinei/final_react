@@ -6,24 +6,21 @@ header {
 }
 
 .itens {
-	text-align: justify; 
+	text-align: justify;
 	list-style-type: none;
 	padding: 0;
 	display: flex;
-	justify-content: flex-end; 
+	justify-content: flex-end;
 	gap: 50px;
-  }
-  
-  .item1, .item2, .item3, .item4, .item5 {
+}
+
+.item {
 	color: black;
 	font-size: 18px;
 	cursor: pointer;
-	margin-top: 30px; 
+	margin-top: 30px;
+}
 
-  }
-  
-  .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover {
-	
-		border-bottom: 1px solid red;
-	;  
-  }
+.item:hover {
+	border-bottom: 1px solid red;
+}
