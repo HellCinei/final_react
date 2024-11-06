@@ -4,9 +4,11 @@ import Home from '../pages/Home'
 import Compras from '../pages/Compras'
 import Sobre from '../pages/Sobre'
 import Login from '../pages/Login'
+
 import Catalogo from '../pages/Catalogo'
 import Config from '../pages/Config'
 import AdicionarFilme from '../pages/AdicionarFilme.jsx'
+import Pagamento from '../pages/Pagamento'
 
 export default function AppRouter() {
   return (
@@ -20,6 +22,7 @@ export default function AppRouter() {
         <Route path= '/adicionarfilme' element={<AdicionarFilme/>}/>
         <Route path= '/sobre' element={<Sobre/>}/>
         <Route path= '/login' element={<Login/>}/>
+        <Route path= '/pagamento' element={<Pagamento/>}/>
     </Routes>
   )
 }

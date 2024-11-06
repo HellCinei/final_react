@@ -7,24 +7,32 @@ export default function HeaderHome() {
     <header className={styles.container}>
       <div>
         <ul className={styles.itens}>
-          <li className={styles.item}>
-            <Link to={"/"}>Home</Link>
-          </li>
-          <div className={styles.btnLerMais}>
-            <Link to={"/catalogo"}>
-              <button> Veja nosso catálogo</button>
+
+            <li className={styles.item}>
+              <Link className={styles.link} to={"/"}>
+              Home
+              </Link>
+            </li>
+            {/* <li className={styles.item}>
+              <Link className={styles.link} to={"/catalogo"}>
+              Catálogo
+              </Link>
+            </li> */}
+            <li className={styles.item}>
+            <Link className={styles.link} to={"/compras"}>
+              Compre
             </Link>
-          
-          </div>
-          <li className={styles.item}>
-            <Link to={"/compras"}>Compre</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to={"/sobre"}>Sobre</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to={"/login"}>Log-in</Link>
-          </li>
+            </li>
+            <li className={styles.item}>
+              <Link className={styles.link} to={"/sobre"}>
+              Sobre
+              </Link>
+            </li>
+            <li className={styles.item}>
+              <Link className={styles.link} to={"/login"}>
+              Log-in
+              </Link>
+            </li>
         </ul>
       </div>
     </header>
