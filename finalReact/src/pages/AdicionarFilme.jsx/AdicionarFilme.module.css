@@ -1,0 +1,30 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 30px auto;
+	background-color: rgb(100, 0, 0);
+	box-shadow: 0 0 10px rgb(200, 0, 0);
+	border-radius: 15px;
+	height: auto;
+	width: 30%;
+	min-width: 500px;
+}
+.linePost {
+  height: 2px;
+  background-color: rgb(150, 0, 0);
+}
+.cardPost h1 {
+  color: lightgray;
+  text-shadow: 1px 1px rgb(150, 0, 0);
+}
+.fields {
+  margin: 20px auto;
+  text-align: left;
+}
+.titulo {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px rgb(150, 0, 0);
+}

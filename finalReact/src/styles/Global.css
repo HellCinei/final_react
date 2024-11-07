@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('../assets/background.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+button {
+height: auto;
+width: 120px;
+color: white;
+font-size: 1.1rem;
+border-radius: 20px;
+background-color: black;
+border-right: 2px solid gray;
+border-bottom: 2px solid gray;
+border-top: 2px solid lightgray;
+border-left: 2px solid lightgray;
+box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+text-shadow: 1px 1px rgba(135, 135, 135, 0.5);
+}
+
+button:active {
+border-top: 2px solid gray;
+border-left: 2px solid gray;
+border-right: 2px solid lightgray;
+border-bottom: 2px solid lightgray;
+}

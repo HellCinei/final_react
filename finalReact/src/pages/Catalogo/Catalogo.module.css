@@ -1,0 +1,47 @@
+.cards {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 2rem;
+  color: white;
+}
+
+.sinopse {
+  font-size: 1.5rem;
+  margin: 15px auto;
+  color: white;
+}
+
+.card , .modal{
+  border-radius: 20px;
+  height: auto;
+  width: 15%;
+  min-width: 200px;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(100,0,0) ;
+  margin: 30px;
+}
+
+.modal {
+
+  height: 400px;
+  width: 50%;
+  
+}
+
+.line {
+  height: 2px;
+  justify-content:  center;
+  background-color: rgb(0, 0, 0);
+}
+
+.btnL {
+
+  margin-bottom: 20px;
+}
