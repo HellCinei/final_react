@@ -1,16 +1,4 @@
 
-/* Config.module.css*/
-
-
-.background {
-  background-image: url("../../assets/pipoca2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  height: 100%;
- 
-}
-
 
 .modal {
   background-color: #f4f4f4;
@@ -21,7 +9,6 @@
   margin: auto;
 }
 
-/* Estilo dos campos */
 .fields {
   margin-bottom: 24px;
   display: flex;
@@ -58,7 +45,6 @@ input[type="text"]:focus {
   font-style: italic;
 }
 
-/* Estilo dos Botões */
 .btnEditar,
 .btnVoltar,
 .btnPostar {
@@ -139,7 +125,6 @@ input[type="text"]:focus {
   margin: 16px 0;
 }
 
-/* Botões de Ação dos Cards */
 .btns {
   display: flex;
   justify-content: space-between;

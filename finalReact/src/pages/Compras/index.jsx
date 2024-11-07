@@ -8,7 +8,7 @@ export default function Compras() {
 	let Navigate = useNavigate();
 	const [contagem, setContagem] = useState(0);
 	const [valor, setValor] = useState(0);
-	const [filme, setFilme] = useState(10.5);
+	const [filme, setFilme] = useState(23.5);
 
 	function contar(marcado) {
 		if (marcado == true) {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../components/Header";
 import { Link, useParams } from "react-router-dom";
+import Footer from '../../components/Footer';
 import * as styles from "./Catalogo.module.css";
 import axios from "axios";
 
@@ -60,6 +61,9 @@ export default function Catalogo() {
           </div>
         )}
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   );
 }

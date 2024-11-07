@@ -12,11 +12,11 @@ const validationSchema = yup.object().shape({
   titulo: yup
     .string()
     .required("O título deve ser preenchido!")
-    .max(40, "Tamanho máximo de caracteres: 40."),
+    .max(100, "Tamanho máximo de caracteres: 100."),
   sinopse: yup
     .string()
     .required("A sinopse deve ser preenchida!")
-    .max(80, "Tamanho máximo de caracteres: 80."),
+    .max(500, "Tamanho máximo de caracteres: 500."),
 });
 
 export default function Config() {
@@ -99,12 +99,12 @@ export default function Config() {
               <button type="submit" className={styles.btnEditar}>
                 Editar
               </button>
-              <button
-                onClick={() => setFilmeDetalhado(null)}
-                className={styles.btnVoltar}
-              >
-                Voltar
-              </button>
+              <Link to={`/config`}>
+            <button onClick={() => setFilmeDetalhado(null)} className={styles.btnVoltar}>
+              Voltar
+            </button>
+            </Link>
+            
             </form>
           </div>
         ) : (
